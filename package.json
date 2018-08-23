@@ -7,11 +7,11 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "buildcap": "ionic build && npx cap copy",
-    "updatecap": "npx cap update && ionic build && npx cap copy",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "buildcap": "ionic build && npx cap copy",
+    "updatecap": "npx cap update && ionic build && npx cap copy"
   },
   "private": true,
   "dependencies": {

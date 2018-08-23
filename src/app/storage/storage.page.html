@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Storage</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Type Username" [(ngModel)]="userInput"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="setObject()">Set Object</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="getObject()">Get Object</ion-button>
+      {{userObject}}
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="setItem()">Set Item</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="getItem()">Get Item</ion-button>
+      {{user}}
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="removeItem()">Remove Item</ion-button>
+      {{user}}
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="keys()">Get Keys</ion-button>
+      {{storageKeys}}
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="clear()">Clear</ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)="reload()" color="secondary">Reload App</ion-button>
+    </ion-item>
+  </ion-list>
+</ion-content>
