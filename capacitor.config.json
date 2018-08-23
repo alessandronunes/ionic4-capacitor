@@ -1,0 +1,6 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "Ionic4Capacitor",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
