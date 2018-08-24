@@ -10,19 +10,23 @@
 var map = {
 	"./accessibility/accessibility.module": [
 		"./src/app/accessibility/accessibility.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~toas~77a30a56",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
 		"common",
 		"accessibility-accessibility-module"
 	],
 	"./app/app.module": [
 		"./src/app/app/app.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~toas~77a30a56",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
 		"common",
 		"app-app-module"
 	],
+	"./background-task/background-task.module": [
+		"./src/app/background-task/background-task.module.ts",
+		"background-task-background-task-module"
+	],
 	"./browser/browser.module": [
 		"./src/app/browser/browser.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~toas~77a30a56",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
 		"common",
 		"browser-browser-module"
 	],
@@ -30,9 +34,29 @@ var map = {
 		"./src/app/camera/camera.module.ts",
 		"camera-camera-module"
 	],
+	"./clipboard/clipboard.module": [
+		"./src/app/clipboard/clipboard.module.ts",
+		"clipboard-clipboard-module"
+	],
+	"./console/console.module": [
+		"./src/app/console/console.module.ts",
+		"console-console-module"
+	],
+	"./device/device.module": [
+		"./src/app/device/device.module.ts",
+		"device-device-module"
+	],
+	"./filesystem/filesystem.module": [
+		"./src/app/filesystem/filesystem.module.ts",
+		"filesystem-filesystem-module"
+	],
+	"./geolocation/geolocation.module": [
+		"./src/app/geolocation/geolocation.module.ts",
+		"geolocation-geolocation-module"
+	],
 	"./haptics/haptics.module": [
 		"./src/app/haptics/haptics.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~toas~77a30a56",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
 		"common",
 		"haptics-haptics-module"
 	],
@@ -40,13 +64,45 @@ var map = {
 		"./src/app/home/home.module.ts",
 		"home-home-module"
 	],
-	"./list/list.module": [
-		"./src/app/list/list.module.ts",
-		"list-list-module"
+	"./keyboard/keyboard.module": [
+		"./src/app/keyboard/keyboard.module.ts",
+		"keyboard-keyboard-module"
+	],
+	"./modals/modals.module": [
+		"./src/app/modals/modals.module.ts",
+		"modals-modals-module"
+	],
+	"./motion/motion.module": [
+		"./src/app/motion/motion.module.ts",
+		"motion-motion-module"
+	],
+	"./network/network.module": [
+		"./src/app/network/network.module.ts",
+		"network-network-module"
+	],
+	"./share/share.module": [
+		"./src/app/share/share.module.ts",
+		"share-share-module"
+	],
+	"./splash-screen/splash-screen.module": [
+		"./src/app/splash-screen/splash-screen.module.ts",
+		"splash-screen-splash-screen-module"
+	],
+	"./status-bar/status-bar.module": [
+		"./src/app/status-bar/status-bar.module.ts",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
+		"common",
+		"status-bar-status-bar-module"
+	],
+	"./storage/storage.module": [
+		"./src/app/storage/storage.module.ts",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
+		"common",
+		"storage-storage-module"
 	],
 	"./toast/toast.module": [
 		"./src/app/toast/toast.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~toas~77a30a56",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~stat~0940e7a0",
 		"common",
 		"toast-toast-module"
 	]
@@ -94,31 +150,28 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var routes = [
-    {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
-    },
-    {
-        path: 'home',
-        loadChildren: './home/home.module#HomePageModule'
-    },
-    {
-        path: 'list',
-        loadChildren: './list/list.module#ListPageModule'
-    },
-    {
-        path: 'toast',
-        loadChildren: './toast/toast.module#ToastPageModule'
-    },
-    {
-        path: 'accessibility',
-        loadChildren: './accessibility/accessibility.module#AccessibilityPageModule'
-    },
+    { path: '', redirectTo: 'home', pathMatch: 'full' },
+    { path: 'home', loadChildren: './home/home.module#HomePageModule' },
+    { path: 'accessibility', loadChildren: './accessibility/accessibility.module#AccessibilityPageModule' },
     { path: 'app', loadChildren: './app/app.module#AppPageModule' },
     { path: 'browser', loadChildren: './browser/browser.module#BrowserPageModule' },
+    { path: 'backgroundtask', loadChildren: './background-task/background-task.module#BackgroundTaskPageModule' },
     { path: 'camera', loadChildren: './camera/camera.module#CameraPageModule' },
-    { path: 'haptics', loadChildren: './haptics/haptics.module#HapticsPageModule' }
+    { path: 'clipboard', loadChildren: './clipboard/clipboard.module#ClipboardPageModule' },
+    { path: 'console', loadChildren: './console/console.module#ConsolePageModule' },
+    { path: 'device', loadChildren: './device/device.module#DevicePageModule' },
+    { path: 'filesystem', loadChildren: './filesystem/filesystem.module#FilesystemPageModule' },
+    { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
+    { path: 'haptics', loadChildren: './haptics/haptics.module#HapticsPageModule' },
+    { path: 'keyboard', loadChildren: './keyboard/keyboard.module#KeyboardPageModule' },
+    { path: 'modals', loadChildren: './modals/modals.module#ModalsPageModule' },
+    { path: 'motion', loadChildren: './motion/motion.module#MotionPageModule' },
+    { path: 'network', loadChildren: './network/network.module#NetworkPageModule' },
+    { path: 'share', loadChildren: './share/share.module#SharePageModule' },
+    { path: 'splashscreen', loadChildren: './splash-screen/splash-screen.module#SplashScreenPageModule' },
+    { path: 'statusbar', loadChildren: './status-bar/status-bar.module#StatusBarPageModule' },
+    { path: 'storage', loadChildren: './storage/storage.module#StoragePageModule' },
+    { path: 'toast', loadChildren: './toast/toast.module#ToastPageModule' }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {

@@ -62,7 +62,7 @@ var AccessibilityPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-title>Accessibility</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  Accessibility does not have web implementation.\n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n        Accessibility\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content padding>\n  Accessibility does not have web implementation.\n</ion-content>\n"
 
 /***/ }),
 
