@@ -10,13 +10,13 @@
 var map = {
 	"./accessibility/accessibility.module": [
 		"./src/app/accessibility/accessibility.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"accessibility-accessibility-module"
 	],
 	"./app/app.module": [
 		"./src/app/app/app.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"app-app-module"
 	],
@@ -26,7 +26,7 @@ var map = {
 	],
 	"./browser/browser.module": [
 		"./src/app/browser/browser.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"browser-browser-module"
 	],
@@ -56,7 +56,7 @@ var map = {
 	],
 	"./haptics/haptics.module": [
 		"./src/app/haptics/haptics.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"haptics-haptics-module"
 	],
@@ -78,33 +78,37 @@ var map = {
 	],
 	"./network/network.module": [
 		"./src/app/network/network.module.ts",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
+		"common",
 		"network-network-module"
 	],
 	"./share/share.module": [
 		"./src/app/share/share.module.ts",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
+		"common",
 		"share-share-module"
 	],
 	"./splash-screen/splash-screen.module": [
 		"./src/app/splash-screen/splash-screen.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"splash-screen-splash-screen-module"
 	],
 	"./status-bar/status-bar.module": [
 		"./src/app/status-bar/status-bar.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"status-bar-status-bar-module"
 	],
 	"./storage/storage.module": [
 		"./src/app/storage/storage.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"storage-storage-module"
 	],
 	"./toast/toast.module": [
 		"./src/app/toast/toast.module.ts",
-		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~spla~3fea5d48",
+		"accessibility-accessibility-module~app-app-module~browser-browser-module~haptics-haptics-module~netw~0ca25c30",
 		"common",
 		"toast-toast-module"
 	]
