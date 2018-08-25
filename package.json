@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "buildcap": "ionic build && npx cap copy",
+    "buildcap": "ionic build && npx cap sync",
     "updatecap": "npx cap update && ionic build && npx cap copy"
   },
   "private": true,

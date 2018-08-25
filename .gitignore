@@ -21,6 +21,8 @@ npm-debug.log*
 coverage/
 www/
 electron/
+android/
+ios/
 node_modules/
 tmp/
 temp/
